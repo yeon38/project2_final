@@ -37,17 +37,11 @@ let listJson = [
         date: "월,목 7교시",
         content: "내용을 입력해주세요."
     }
-    // 나머지 데이터 항목들
 ];
 
-const container = document.querySelector('.log'); // 데이터를 표시할 요소
-// 현재 URL에서 파라미터 문자열을 가져옵니다.
+const container = document.querySelector('.log'); 
 const queryString = window.location.search;
-
-// URLSearchParams 객체를 사용하여 파라미터 값을 읽습니다.
 const urlParams = new URLSearchParams(queryString);
-
-// "data" 파라미터 값을 가져옵니다.
 const dataValue = urlParams.get("data");
 
 for (let i = 0; i < 5; i++) {
@@ -58,15 +52,6 @@ document
     .value = memberList
     .get(Number(dataValue))
     .subject;
-
-// const parts = memberList
-//     .get(Number(dataValue))
-//     .date
-//     .replace(/-/g, '/');
-
-// document
-//     .getElementById('data2')
-//     .value = Date(parts);
 document
     .getElementById('data2')
     .value = memberList
@@ -92,7 +77,6 @@ document
     .value = memberList
     .get(Number(dataValue))
     .content;
-
 
 function deleteData() {
     if (confirm('게시물을 삭제할까요?')) {
