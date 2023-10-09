@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="my.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous">
+        <style>
+            #div1 {
+                margin: 10px 22px;
+            }
+
+            #my-mb-3-1,
+            #my-mb-3-2 {
+                width: 49%;
+                float: left;
+
+            }
+
+            #my-mb-3-2 {
+                margin-left: 2%;
+            }
+            .form-label {
+                font-weight: bold;
+            }
+
+            #data6 {
+                height: 30vh;
+            }
+
+            #button1,#button2 {
+                width: 100px;
+            }
+            #button1 {
+                background-color: rgb(224, 221, 30);
+                border: 1px solid rgb(224, 221, 30);
+            }
+            #button2 {
+                background-color: rgb(92, 197, 106);
+                border: 1px solid rgb(92, 197, 106);
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class='navbar-brand' href='/'>My Course</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a aria-current='page' class='nav-link active' href='index.html'>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class='nav-link' href='add.html'>Add</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="div1">
+            <div class="mb-3" id="my-mb-3-1">
+                <label for="exampleFormControlInput1" class="form-label">과목 이름</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="data1"
+                    value=""
+                    name="subject"
+                    disabled="disabled">
+            </div>
+            <div class="mb-3" id="my-mb-3-2">
+                <label for="exampleFormControlInput1" class="form-label">수업 시간</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="data2"
+                    value=""
+                    name="date"
+                    disabled="disabled">
+            </div>
+            <div class="mb-3" id="my-mb-3-1">
+                <label for="exampleFormControlInput1" class="form-label">수업 장소</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="data3"
+                    value=""
+                    name="place"
+                    disabled="disabled">
+            </div>
+            <div class="mb-3" id="my-mb-3-2">
+                <label for="exampleFormControlInput1" class="form-label">교수님</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="data4"
+                    value=""
+                    name="professor"
+                    disabled="disabled">
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">학점</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="data5"
+                    value=""
+                    name="scroe"
+                    disabled="disabled">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">내용</label>
+                <textarea
+                    class="form-control"
+                    id="data6"
+                    rows="3"
+                    name="content"
+                    disabled="disabled"></textarea>
+            </div>
+            <input class="btn btn-primary" type="button" value="Edit" id="button1" onclick="location.href= 'edit.html'">
+            <input class="btn btn-primary" type="button" value="Delete" id="button2" onclick="deleteData()">
+        </div>
+
+        
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+        <script src="course.js"></script>
+    </body>
+
+</html>
