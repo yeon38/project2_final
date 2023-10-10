@@ -1,20 +1,31 @@
+/* 미디어 쿼리를 사용하여 뷰포트 너비가 768px 이상일 때 적용될 스타일 */
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
 }
 
+/* 네비게이션 메뉴 항목 및 로고에 대한 기본 스타일 */
 .nav-item,
 .navbar-brand {
-    padding: 0 10px;
+    padding: 10px;
     margin-right: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: background-color 0.3s, opacity 0.3s;
 }
+
+/* 네비게이션 메뉴 항목 및 로고에 호버 효과 적용 */
 .nav-item:hover,
 .navbar-brand:hover {
-    background-color: gray;
+    background-color: rgb(101, 204, 242); /* 연한 하늘색 배경색으로 변경 */
     border-radius: 10px;
-    opacity: 50%;
+    opacity: 0.8;
+}
 
+/* 네비게이션 바의 글꼴 스타일 변경 */
+.navbar {
+    background-color: rgb(173, 216, 230); /* 연한 하늘색 배경색으로 변경 */
+    font-family: Arial, sans-serif; /* 원하는 글꼴 스타일로 변경 */
+    font-size: 16px; /* 글꼴 크기 조정 */
 }
